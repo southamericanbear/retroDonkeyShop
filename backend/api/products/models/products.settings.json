@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "Products",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Details": {
+      "type": "richtext",
+      "required": true
+    },
+    "Condition": {
+      "type": "string",
+      "required": true
+    },
+    "Price": {
+      "type": "biginteger",
+      "required": true
+    },
+    "FreeShipping": {
+      "type": "boolean",
+      "required": true
+    },
+    "img": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "brands": {
+      "via": "products",
+      "collection": "brand"
+    },
+    "consoles": {
+      "collection": "console",
+      "via": "products",
+      "dominant": true
+    },
+    "Stock": {
+      "type": "integer"
+    },
+    "games": {
+      "via": "products",
+      "collection": "games"
+    },
+    "accessories": {
+      "via": "products",
+      "collection": "accessories"
+    }
+  }
+}

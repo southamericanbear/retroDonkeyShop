@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accessories",
+  "info": {
+    "name": "Accessories"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "consoles": {
+      "collection": "console",
+      "via": "accessories",
+      "dominant": true
+    },
+    "brands": {
+      "collection": "brand",
+      "via": "accessories",
+      "dominant": true
+    },
+    "products": {
+      "collection": "products",
+      "via": "accessories",
+      "dominant": true
+    }
+  }
+}

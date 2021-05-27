@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "games",
+  "info": {
+    "name": "Games"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "brands": {
+      "collection": "brand",
+      "via": "games",
+      "dominant": true
+    },
+    "consoles": {
+      "collection": "console",
+      "via": "games",
+      "dominant": true
+    },
+    "products": {
+      "collection": "products",
+      "via": "games",
+      "dominant": true
+    }
+  }
+}

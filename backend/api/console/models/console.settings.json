@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "consoles",
+  "info": {
+    "name": "Console",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Console": {
+      "type": "string",
+      "required": true
+    },
+    "brand": {
+      "model": "brand",
+      "via": "consoles"
+    },
+    "products": {
+      "via": "consoles",
+      "collection": "products"
+    },
+    "games": {
+      "via": "consoles",
+      "collection": "games"
+    },
+    "accessories": {
+      "via": "consoles",
+      "collection": "accessories"
+    }
+  }
+}

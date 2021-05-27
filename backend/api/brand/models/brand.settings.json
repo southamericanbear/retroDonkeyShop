@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brands",
+  "info": {
+    "name": "Brand",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Brand": {
+      "type": "string",
+      "required": true
+    },
+    "products": {
+      "via": "brands",
+      "collection": "products",
+      "dominant": true
+    },
+    "consoles": {
+      "via": "brand",
+      "collection": "console"
+    },
+    "games": {
+      "via": "brands",
+      "collection": "games"
+    },
+    "accessories": {
+      "via": "brands",
+      "collection": "accessories"
+    }
+  }
+}
