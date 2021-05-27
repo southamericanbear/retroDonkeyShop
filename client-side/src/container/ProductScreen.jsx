@@ -33,12 +33,16 @@ export const ProductScreen = () => {
         <div className="top">
           {" "}
           <div className="left">
-            <img src={product.img} alt="product.Title" />
+            <img
+              src={`https://retro-games-shop.herokuapp.com${product.img[0].formats.medium.url}`}
+              alt="product.Title"
+            />
           </div>
           <div className="right">
             <div className="info">
               <h1>{product.Title}</h1>
-              <h4>${product.Price}</h4>
+              <h3>${product.Price}</h3>
+              <h4>Only {product.Stock} in stock!</h4>
               <h5>Condition: {product.Condition}</h5>
               {product.FreeShipping === false ? null : (
                 <h6>Free Shipping Available</h6>
@@ -72,7 +76,7 @@ export const ProductScreen = () => {
                 <span className="tab-item">Condition: {product.Condition}</span>
               </Tab>
               <Tab
-               className='tab-color'
+                className="tab-color"
                 eventKey="warranty"
                 title="Warranty Information"
               >
