@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+.makeStyles-logo-2 {
+  font-family: "Press Start 2P", cursive !important;
+}
+
+.makeStyles-logo-2:hover {
+  color: inherit;
+}
+
+@media (max-width: 770px) {
+  .makeStyles-logo-2 {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .makeStyles-logo-2 {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (min-width: 3330px) {
+  .makeStyles-logo-2 {
+    font-size: 0.8rem !important;
+  }
+}

@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+.presentation {
+  display: flex;
+  justify-content: space-around;
+}
+
+.title {
+  width: 50% !important;
+  padding: 0.5% 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title h1 {
+  font-family: "Press Start 2P", cursive !important;
+  font-size: 1.2rem;
+}
+
+.carru {
+  width: 50%;
+}
+
+@media (max-width: 900px) {
+  .presentation {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .carru,
+  .title {
+    width: 100% !important;
+  }
+
+  .title {
+    padding: 20px;
+  }
+}
