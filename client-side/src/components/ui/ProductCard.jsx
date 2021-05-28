@@ -8,7 +8,6 @@ export const ProductCard = ({ Title, Price, id, img }) => {
   const handleClick = () => {
     addToCart(id);
   };
-  console.log(img);
   return (
     <Card
       className="animate__animated animate__fadeIn"
@@ -16,7 +15,7 @@ export const ProductCard = ({ Title, Price, id, img }) => {
     >
       <Card.Img
         variant="top"
-        src={`https://retro-games-shop.herokuapp.com${img[0].formats.medium.url}`}
+        src={img}
         style={{ width: "100%", height: "180px" }}
       />
       <Card.Body>
