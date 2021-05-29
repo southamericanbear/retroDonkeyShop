@@ -18,7 +18,6 @@ export const ProductScreen = () => {
     productPromise
       .then((product) => setProduct(product))
       .catch((error) => console.log(error));
-    console.log(69);
   }, []);
 
   const handleClick = () => {
@@ -61,7 +60,11 @@ export const ProductScreen = () => {
                 <h6>Free Shipping Available</h6>
               )}
               <div className="btn-container">
-                <Link to="/cart" className="add-to-cart-btn buy-now-btn">
+                <Link
+                  onClick={handleClick}
+                  to="/cart"
+                  className="add-to-cart-btn buy-now-btn"
+                >
                   Buy now
                 </Link>
                 <Button onClick={handleClick} className="add-to-cart-btn">
