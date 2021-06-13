@@ -18,7 +18,7 @@ export const ProductScreen = () => {
     productPromise
       .then((product) => setProduct(product))
       .catch((error) => console.log(error));
-  }, []);
+  }, [productPromise]);
 
   const handleClick = () => {
     addToCart(product.id);

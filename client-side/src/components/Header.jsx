@@ -76,8 +76,8 @@ const headersData = [
     href: "/products",
   },
   {
-    label: "Cart",
-    href: "/cart",
+    label: "Search",
+    href: "/search",
   },
 ];
 

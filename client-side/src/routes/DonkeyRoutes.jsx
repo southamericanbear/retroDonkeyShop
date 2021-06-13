@@ -11,6 +11,7 @@ import { Layout } from "../components/Layout";
 import { Products } from "../container/Products";
 import { ProductScreen } from "../container/ProductScreen";
 import { FourZeroFour } from "../container/FourZeroFour";
+import { SearchPage } from "../container/SearchPage";
 
 const DonkeyRoutes = () => {
   return (
@@ -28,6 +29,9 @@ const DonkeyRoutes = () => {
           </Route>
           <Route exact path="/cart">
             <Cart />
+          </Route>
+          <Route exact path="/search">
+            <SearchPage />
           </Route>
           <Route exact path="/404">
             <FourZeroFour />

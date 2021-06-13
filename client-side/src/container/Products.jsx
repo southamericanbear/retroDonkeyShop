@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { AuthContext } from "../auth/AuthContext";
 import { MenuCheckbox } from "../components/ui/MenuCheckbox";
 import { ProductCard } from "../components/ui/ProductCard";

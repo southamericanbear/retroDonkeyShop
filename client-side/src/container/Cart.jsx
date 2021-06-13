@@ -25,7 +25,7 @@ const Cart = () => {
       }
       setCart(select);
     }
-  }, []);
+  }, [products]);
 
   let pricesArr = cart.map((i) => parseInt(i.Price));
   let total = 39;
